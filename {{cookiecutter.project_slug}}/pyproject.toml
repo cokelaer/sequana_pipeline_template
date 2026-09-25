@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "sequana-{{cookiecutter.name}}"
-version = "0.0.1"
+version = "3.0.0"
 description = "{{cookiecutter.description}}"
 authors = ["Sequana Team"]
 license = "BSD-3"
