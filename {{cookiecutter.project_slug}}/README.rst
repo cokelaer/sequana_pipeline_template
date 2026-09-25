@@ -9,13 +9,13 @@
 .. image:: https://github.com/sequana/sequana_{{cookiecutter.name}}/actions/workflows/main.yml/badge.svg
    :target: https://github.com/sequana/sequana_{{cookiecutter.name}}/actions/workflows/main.yml
 
-.. image:: https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11-blue.svg
+.. image:: https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg
     :target: https://pypi.python.org/pypi/sequana_{{cookiecutter.name}}
-    :alt: Python 3.9 | 3.10 | 3.11
+    :alt: Python 3.10 | 3.11 | 3.12
 
 
 
-This is the **{{cookiecutter.name}}** pipeline from the `Sequana <https://sequana.readthedocs.org>`_ project
+This is the **{{cookiecutter.name}}** pipeline from the `Sequana <https://sequana.readthedocs.io>`_ project
 
 :Overview: TODO 
 :Input: TODO
@@ -27,7 +27,7 @@ This is the **{{cookiecutter.name}}** pipeline from the `Sequana <https://sequan
 Installation
 ~~~~~~~~~~~~
 
-sequana_{{cookiecutter.name}} is based on Python3, just install the package as follows::
+sequana_{{cookiecutter.name}} requires Python 3.10+. Install the package as follows::
 
     pip install sequana_{{cookiecutter.name}} --upgrade
 
@@ -39,15 +39,14 @@ Usage
 ::
 
     sequana_{{cookiecutter.name}} --help
-    sequana_{{cookiecutter.name}} --input-directory DATAPATH 
+    sequana_{{cookiecutter.name}} --input-directory DATAPATH
 
-This creates a directory with the pipeline and configuration file. You will then need 
-to execute the pipeline::
+This creates a directory with the pipeline and configuration file. You can then execute the pipeline::
 
     cd {{cookiecutter.name}}
     sh {{cookiecutter.name}}.sh  # for a local run
 
-This launch a snakemake pipeline. If you are familiar with snakemake, you can 
+This launches a snakemake pipeline. If you are familiar with snakemake, you can 
 retrieve the pipeline itself and its configuration files and then execute the pipeline yourself with specific parameters::
 
     snakemake -s {{cookiecutter.name}}.rules -c config.yaml --cores 4 --stats stats.txt
@@ -78,7 +77,7 @@ By default, the home is already set for you. Additional binding path can be set 
 Requirements
 ~~~~~~~~~~~~
 
-This pipelines requires the following executable(s):
+This pipeline requires the following executable(s):
 
 - TODO
 
@@ -104,6 +103,7 @@ Changelog
 ========= ====================================================================
 Version   Description
 ========= ====================================================================
+3.0.0     **Modern cookiecutter template with Poetry, Python 3.10+, GitHub Actions**
 0.0.1     **First release.**
 ========= ====================================================================
 
