@@ -2,7 +2,7 @@
 Sequana Pipeline Template
 =========================
 
-:version: 2.0
+:version: 3.0
 
 This repository is a Cookiecutter template to start a new `Sequana pipeline <https://sequana.readthedocs.io>`_ 
 implementation from scratch.
